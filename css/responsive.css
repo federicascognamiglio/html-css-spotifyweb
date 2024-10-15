@@ -4,6 +4,27 @@
     /* Side Bar */
     .side-bar {
         width: 200px;
+        padding: 10px 20px;
+    }
+
+    .logo {
+        display: inline-block;
+    }
+
+    .logo-icon {
+        display: none;
+    }
+
+    .nav-list .icon {
+        width: 15%;
+    }
+
+    .nav-list span {
+        display: inline;
+    }
+
+    .playlist {
+        display: inline-block;
     }
 
     /* Main Section */
@@ -14,7 +35,7 @@
 
 /* Responsive Tablet */
 @media screen and (min-width: 425px) {
-    
+
 }
 
 /* Responsive Desktop */

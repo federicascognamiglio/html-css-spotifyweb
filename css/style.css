@@ -19,7 +19,28 @@ a {
 }
 
 /* UTILITIES */
+/* Colors */
+:root {
+    --dark-gray: #8f8f8f;
+    --light-gray: #A3A3A3;
+    --upgrade-bar-bg: #080B12;
+    --content-section-bg: #141922;
+    --green-details: #ADFF2F;
+}
+/* Typography */
+.text-small {
+    font-size: .7rem;
+    font-weight: 600;
+}
 
+.text-regular {
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.text-gray {
+    color: var(--dark-gray);
+}
 
 /* COMMON */
 /* Layout */
@@ -29,6 +50,11 @@ a {
 
     /* debug */
     border: 2px solid #0000ff;
+}
+
+/* Typography */
+body {
+    font-family: "Helvetica Neue", sans-serif;
 }
 
 /* MAIN */
@@ -44,10 +70,76 @@ a {
 /* Side Bar */
 .side-bar {
     width: 50px;
+    padding: 12px;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-    /* debug */
-    height: 100%;
-    background-color: #ee82ee;
+.logo {
+    display: none;
+    margin-bottom: 10px;
+    width: 70%;
+}
+
+.nav-list span {
+    display: none;
+}
+
+.nav-list li {
+    margin-bottom: 10px;
+}
+
+.nav-list a {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.playlist {
+    display: none;
+    margin-top: 10px;
+}
+
+.playlist .list-items {
+    margin-top: 10px;
+}
+
+.list-items li {
+    margin-bottom: 15px;
+}
+
+.add-btn {
+    font-size: 2rem;
+    color: #000000;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 25px;
+    background-color: var(--light-gray);
+}
+
+.bottom-nav img {
+    display: inline;
+    width: 10%;
+}
+
+.profile img {
+    background-color: var(--dark-gray);
+}
+
+.bottom-nav hr {
+    margin: 10px 0;
+    border: .5px solid var(--dark-gray);
+}
+
+.bottom-nav .download, 
+.bottom-nav .profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 /* Main Section */
