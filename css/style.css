@@ -149,6 +149,19 @@ body {
     background-color: var(--light-gray);
 }
 
+.home {
+    position: relative;
+}
+
+.home::before {
+    content:"";
+    border: 1px solid var(--green-details);
+    height: 25px;
+    position: absolute;
+    top: -7px;
+    right: 70px;
+} */
+
 /* Bottom Nav */
 .bottom-nav span {
     display: none;
@@ -237,6 +250,19 @@ body {
 .created-for h2,
 .popular-artists h2 {
     padding-bottom: 5px;
+}
+
+.selected {
+    position: relative;
+}
+
+.selected::after {
+    content:"";
+    border: 1px solid var(--green-details);
+    width: 25px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
 /* Bottom Block */
