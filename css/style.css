@@ -172,14 +172,16 @@ body {
 }
 
 .home::before {
-    content:"";
+    content: "";
     display: none;
     border: 1.5px solid var(--green-details);
     height: 25px;
     position: absolute;
     top: -7px;
     right: 72px;
-} */
+}
+
+*/
 
 /* Bottom Nav */
 .bottom-nav span {
@@ -235,7 +237,7 @@ body {
     border-radius: 20px;
 }
 
-.cover:hover .play-hover{
+.cover:hover .play-hover {
     z-index: 1;
 }
 
@@ -302,7 +304,7 @@ body {
 }
 
 .selected::after {
-    content:"";
+    content: "";
     border: 1px solid var(--green-details);
     width: 25px;
     position: absolute;

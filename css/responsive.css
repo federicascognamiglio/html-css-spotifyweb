@@ -1,5 +1,6 @@
 /* Responsive Mobile Large */
 @media screen and (min-width: 425px) {
+
     /* Side Bar */
     :root {
         --side-bar-width: 200px;
@@ -54,16 +55,18 @@
 
 /* Responsive Tablet */
 @media screen and (min-width: 768px) {
+
     /* Main Section */
     :root {
-    --col-width: calc((100% - 30px) / 4)
+        --col-width: calc((100% - 30px) / 4)
     }
 }
 
 /* Responsive Desktop */
 @media screen and (min-width: 1024px) {
+
     /* Main Section */
     :root {
         --col-width: calc((100% - 50px) / 6)
-        }
+    }
 }
