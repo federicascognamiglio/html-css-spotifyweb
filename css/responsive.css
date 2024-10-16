@@ -2,8 +2,11 @@
 @media screen and (min-width: 375px) {
 
     /* Side Bar */
+    :root {
+        --side-bar-width: 200px;
+    }
+
     .side-bar {
-        width: 200px;
         padding: 10px 20px;
     }
 
@@ -15,10 +18,6 @@
         display: none;
     }
 
-    .nav-list .icon {
-        width: 15%;
-    }
-
     .nav-list span {
         display: inline;
     }
@@ -27,18 +26,31 @@
         display: inline-block;
     }
 
-    /* Main Section */
-    .main-section {
-        width: calc(100% - 200px);
+    .bottom-nav .download,
+    .bottom-nav .profile {
+        justify-content: flex-start;
+    }
+
+    .bottom-nav span {
+        display: inline;
+    }
+
+    .bottom-nav img {
+        display: inline;
+    }
+
+    .profile img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .bottom-nav hr {
+        display: block;
     }
 }
 
 /* Responsive Tablet */
-@media screen and (min-width: 425px) {
-
-}
+@media screen and (min-width: 425px) {}
 
 /* Responsive Desktop */
-@media screen and (min-width: 768px) {
-
-}
+@media screen and (min-width: 768px) {}
