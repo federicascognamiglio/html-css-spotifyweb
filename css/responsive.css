@@ -51,6 +51,16 @@
     .bottom-nav hr {
         display: block;
     }
+
+    /* Bottom Block */
+    .icons i {
+        display: inline-block;
+    }
+    
+    .icons .fa-heart {
+        padding-bottom: 0;
+        padding-right: 5px;
+    }
 }
 
 /* Responsive Tablet */

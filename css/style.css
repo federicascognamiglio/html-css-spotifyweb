@@ -23,7 +23,7 @@ a {
 :root {
     --dark-gray: #8f8f8f;
     --light-gray: #A3A3A3;
-    --upgrade-bar-bg: #080b12;
+    --upgrade-bar-bg: rgba(8, 11, 18, 0.665);
     --content-section-bg: #141922;
     --bottom-block-bg: #282828;
     --green-details: #ADFF2F;
@@ -177,14 +177,14 @@ body {
 .home::before {
     content: "";
     display: none;
-    border: 1.5px solid var(--green-details);
+    background-color: var(--green-details);
+    width: 3px;
     height: 25px;
     position: absolute;
-    top: -7px;
-    right: 72px;
+    top: 50%;
+    left: -44px;
+    transform: translatey(-50%);
 }
-
-*/
 
 /* Bottom Nav */
 .bottom-nav span {
@@ -221,6 +221,7 @@ body {
 .main-section {
     width: calc(100% - var(--side-bar-width));
     color: #ffffff;
+    position: relative;
 }
 
 /* Upgrade Bar */
@@ -231,6 +232,11 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
 }
 
 .upgrade-btn {
@@ -247,9 +253,9 @@ body {
 
 /* Content Section */
 .content-section {
-    height: calc(100% - var(--upgrade-bar-height));
+    height: 100%;
     overflow: scroll;
-    padding: 15px 20px;
+    padding: 80px 20px 0 20px;
     background-color: var(--content-section-bg);
 }
 
@@ -313,11 +319,13 @@ body {
 
 .selected::after {
     content: "";
-    border: 1px solid var(--green-details);
+    background-color: var(--green-details);
+    height: 2.5px;
     width: 25px;
     position: absolute;
     top: 15px;
-    left: 20px;
+    left: 50%;
+    transform: translatex(-50%);
 }
 
 /* Bottom Block */
@@ -341,8 +349,13 @@ body {
     height: 30px;
 }
 
-.song-playing i {
+.icons i {
     color: var(--light-gray);
+    display: block;
+}
+
+.icons .fa-heart {
+    padding-bottom: 5px;
 }
 
 .title {
@@ -358,6 +371,7 @@ body {
 .command-bar {
     display: flex;
     flex-direction: column;
+    width: 40%;
 }
 
 .commands {
@@ -394,14 +408,14 @@ body {
 }
 
 .timeline-large {
-    width: 300px;
+    width: 90%;
     background-color: var(--dark-gray);
     position: relative;
     cursor: pointer;
 }
 
 .timeline-small {
-    width: 100px;
+    width: 30%;
     background-color: #ffffff;
     position: absolute;
     top: 0;
@@ -415,7 +429,7 @@ body {
     border-radius: 50%;
     background-color: #ffffff;
     position: absolute;
-    left: 100px;
+    left: 30%;
     top: 50%;
     transform: translatey(-50%);
 }
@@ -436,16 +450,5 @@ body {
     display: flex;
     gap: 10px;
     align-items: center;
-}
-
-.volume-bar .timeline-large {
-    width: 100px;
-}
-
-.volume-bar .timeline-small {
-    width: 30px;
-}
-
-.volume-bar .timeline-circle {
-    left: 30px;
+    width: 20%;
 }
