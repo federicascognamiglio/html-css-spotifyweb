@@ -28,9 +28,9 @@
     <!-- Wrapper -->
     <main class="wrapper">
         <!-- Top Block -->
-        <section class="top-block">
+        <section class="top-block flex">
             <!-- Side Bar -->
-            <nav class="side-bar">
+            <nav class="side-bar flex justify-between">
                 <!-- Top Nav -->
                 <ul class="nav-list">
                     <li>
@@ -96,12 +96,12 @@
 
                 <!-- Bottom Nav -->
                 <div class="bottom-nav pt-15">
-                    <div class="download white-text-hover">
+                    <div class="download flex align-center justify-center white-text-hover">
                         <img src="./img/download.svg" alt="Download Icon">
                         <span class="text-small text-gray">Installa app</span>
                     </div>
                     <hr>
-                    <div class="profile">
+                    <div class="profile flex align-center justify-center">
                         <img src="./img/profile.svg" alt="Profile Icon">
                         <span class="text-regular">John Doe</span>
                     </div>
@@ -113,7 +113,7 @@
             <!-- Main Section -->
             <section class="main-section">
                 <!-- Upgrade Bar -->
-                <div class="upgrade-bar">
+                <div class="upgrade-bar flex align-center">
                     <span class="upgrade-btn text-small">EFFETTUA L'UPGRADE</span>
                 </div>
                 <!-- /Upgrade Bar -->
@@ -122,7 +122,7 @@
                 <div class="content-section">
                     <!-- Categories -->
                     <nav class="categories pb-20">
-                        <ul class="text-small text-gray">
+                        <ul class="text-small text-gray flex justify-center">
                             <li class="white-text-hover">
                                 <a class="selected" href="">IN EVIDENZA</a>
                             </li>
@@ -256,8 +256,8 @@
         <!-- /Top Block -->
 
         <!-- Bottom Block -->
-        <section class="bottom-block">
-            <div class="song-playing">
+        <section class="bottom-block flex justify-between align-center">
+            <div class="song-playing flex align-center">
                 <img src="./img/sinister.jpeg" alt="Sinister Album Cover">
                 <div class="title">
                     <h5 class="text-xsmall">Sinister</h5>
@@ -268,30 +268,30 @@
                     <i class="fa-regular fa-folder white-text-hover"></i>
                 </div>
             </div>
-            <div class="command-bar">
-                <div class="commands">
+            <div class="command-bar flex">
+                <div class="commands flex align-center justify-center">
                     <i class="fa-solid fa-shuffle"></i>
                     <i class="fa-solid fa-backward-step"></i>
-                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-regular fa-circle-play play"></i>
                     <i class="fa-solid fa-forward-step"></i>
                     <i class="fa-solid fa-rotate-right"></i>
                 </div>
-                <div class="timeline">
+                <div class="timeline flex align-center">
                     <span class="text-xsmall">0:25 </span>
                     <div class="timeline-large">
                         <div class="timeline-small"></div>
-                        <div class="timeline-circle"></div>
+                        <div class="timeline-circle br-50"></div>
                     </div>
                     <span class="text-xsmall">4:35</span>
                 </div>
             </div>
-            <div class="volume-bar">
+            <div class="volume-bar flex align-center">
                 <i class="fa-solid fa-list-ul"></i>
                 <i class="fa-solid fa-display"></i>
                 <i class="fa-solid fa-volume-high"></i>
                 <div class="timeline-large">
                     <div class="timeline-small"></div>
-                    <div class="timeline-circle"></div>
+                    <div class="timeline-circle br-50"></div>
                 </div>
             </div>
         </section>
